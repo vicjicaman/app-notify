@@ -1,11 +1,11 @@
 {
   "fullname": "@nebulario/app-notify",
-  "version": "",
+  "version": "1.0.0-master",
   "repository": {
     "url": "github.com:vicjicaman/app-notify.git",
     "upstream": {}
   },
-  "labels":{
+  "labels": {
     "type": "npm"
   }
 }

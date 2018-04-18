@@ -1,6 +1,6 @@
 {
   "name": "@nebulario/app-notify",
-  "version": "1.0.8",
+  "version": "1.0.0-master",
   "description": "Notification functionality for apps",
   "main": "./dist/index.js",
   "repository": "github.com:vicjicaman/app-notify.git",
