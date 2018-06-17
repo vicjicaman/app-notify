@@ -20,6 +20,7 @@ withStateHandlers(({}) => ({open: false, toastId: null}),
   openNotifyModal: (current) => () => {
     const {toastId, open} = current;
     if (!open) {
+      console.log("OPEN AGAIN!!!!!!!!!!")
       const tid = toast("...", {
         autoClose: false,
         type: toast.TYPE.INFO
