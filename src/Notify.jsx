@@ -16,7 +16,7 @@ export const notify = ({
 
   if (autoClose !== false) {
     if (type === "success") {
-      autoClose = 1500;
+      autoClose = 1250;
     }
 
     if (type === "info") {
