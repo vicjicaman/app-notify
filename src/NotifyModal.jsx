@@ -10,9 +10,7 @@ withStateHandlers(({}) => ({open: false, toastId: null}),
   contentNotifyModal: (current) => ({content}) => {
     const {toastId, open} = current;
     if (open) {
-      toast.update(toastId, {
-        render: content
-      });
+      toast.update(toastId, {render: content});
     }
 
     return current;
@@ -20,7 +18,7 @@ withStateHandlers(({}) => ({open: false, toastId: null}),
   openNotifyModal: (current) => () => {
     const {toastId, open} = current;
     if (!open) {
-      console.log("OPEN AGAIN!!!!!!!!!!")
+
       const tid = toast("...", {
         autoClose: false,
         type: toast.TYPE.INFO
