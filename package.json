@@ -1,6 +1,6 @@
 {
   "name": "@nebulario/app-notify",
-  "version": "1.0.21-local-ui-graph",
+  "version": "1.0.21-local-ui-graph-dev",
   "description": "Notification functionality for apps",
   "main": "./dist/index.js",
   "repository": "github.com:vicjicaman/app-notify.git",
