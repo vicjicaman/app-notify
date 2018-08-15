@@ -1,11 +1,10 @@
 {
+  "type": "npm",
   "fullname": "@nebulario/app-notify",
   "version": "1.0.21-local-ui-graph-dev",
   "repository": {
     "url": "github.com:vicjicaman/app-notify.git",
     "upstream": {}
   },
-  "labels": {
-    "type": "npm"
-  }
+  "labels": []
 }
