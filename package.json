@@ -46,7 +46,9 @@
     "build:dev": "run-p \"build:dev:*\" ",
     "build:prod": "run-p \"build:prod:*\" ",
     "start:dev": "run-p \"build:dev:* --watch\" ",
-    "start:prod": "run-p \"build:prod:* --watch\" "
+    "start:prod": "run-p \"build:prod:* --watch\" ",
+    "build:watch:dev": "run-p \"build:dev:* --watch\" ",
+    "build:watch:prod": "run-p \"build:prod:* --watch\" "
   },
   "dependencies": {
     "react-toastify": "^4.1.0"
