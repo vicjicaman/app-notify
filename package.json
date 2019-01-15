@@ -42,7 +42,6 @@
     "build:prod:resources": "webpack --config webpack.config.resources.js --env.production ",
     "build:dev:resources": "webpack --config webpack.config.resources.js --env.development ",
     "analyze": "webpack --config webpack.config.js --env.analyze",
-    "prepublish": "yarn build:prod",
     "build:dev": "run-p \"build:dev:*\" ",
     "build:prod": "run-p \"build:prod:*\" ",
     "start:dev": "run-p \"build:dev:* --watch\" ",
