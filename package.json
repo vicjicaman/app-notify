@@ -25,8 +25,9 @@
     "npm-run-all": "^4.1.2",
     "postcss-flexbugs-fixes": "^3.2.0",
     "postcss-loader": "^2.0.9",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "recompose": "^0.27.1",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.0",
     "uglifyjs-webpack-plugin": "^1.1.2",
@@ -35,18 +36,25 @@
     "webpack-node-externals": "^1.6.0"
   },
   "scripts": {
-    "clean": "rm -Rf ./dist",
-    "build:prod": "yarn clean && webpack --config webpack.config.js --env.production ",
-    "build:dev": "yarn clean && webpack --config webpack.config.js --env.development ",
+    "clean:web": "rm -Rf ./dist/web*",
+    "build:prod:web": "yarn clean:web && webpack --config webpack.config.js --env.production ",
+    "build:dev:web": "yarn clean:web && webpack --config webpack.config.js --env.development ",
+    "build:prod:resources": "webpack --config webpack.config.resources.js --env.production ",
+    "build:dev:resources": "webpack --config webpack.config.resources.js --env.development ",
     "analyze": "webpack --config webpack.config.js --env.analyze",
-    "prepublish": "yarn build:prod"
+    "build:dev": "run-p \"build:dev:*\" ",
+    "build:prod": "run-p \"build:prod:*\" ",
+    "start:dev": "run-p \"build:dev:* --watch\" ",
+    "start:prod": "run-p \"build:prod:* --watch\" ",
+    "build:watch:dev": "run-p \"build:dev:* --watch\" ",
+    "build:watch:prod": "run-p \"build:prod:* --watch\" "
   },
   "dependencies": {
-    "react-toastify": "^3.1.2",
-    "react-transition-group": "2.2.1"
+    "react-toastify": "^4.1.0"
   },
   "peerDependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "recompose": "^0.27.1"
   }
 }
